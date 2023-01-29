@@ -32,7 +32,7 @@ void pattern2(int n)
             cout<<" ";
         }
         // nums
-        for(int j=i; j>=i; j--){
+        for(int j=i; j>=1; j--){
             cout<<j;
         }
         cout<<endl;
@@ -40,12 +40,25 @@ void pattern2(int n)
     }
 }
 
+void pattern3(int n)
+{
+    int num = 1; 
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout<<num<<" ";
+            num += 1;
+        }
+        cout<<endl;
+    }
+}
 int main()
 {
     int n=5;
     // cin>>n;
-    // pattern1(n);
+    pattern1(n);
     cout<<endl;
     pattern2(n);
+    cout<<endl;
+    pattern3(n);
     return 0;
 }
