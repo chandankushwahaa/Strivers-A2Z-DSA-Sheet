@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void nForest(int n)
+void nForest1(int n)
 {
     for(int i=1; i<=n; i++){
         for(int j=1; j<=n; j++){
@@ -19,7 +19,7 @@ int main()
     for(int i=0; i<t; i++){
         int n;
         cin>>n;
-        nForest(n);
+        nForest1(n);
     }
 
     return 0;

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void pattern1(int n)
+void pattern7(int n)
 {
     for(int i=0; i<n; i++){
         // space
@@ -20,7 +20,7 @@ void pattern1(int n)
     }
 }
 
-void pattern2(int n)
+void pattern8(int n)
 {
     for(int i=0; i<n; i++){
         // space
@@ -43,12 +43,12 @@ int main()
 {
     int n=5;
     // cin>>t;
-    pattern1(n);
+    pattern7(n);
     cout<<endl;
 
-    pattern2(n);
+    pattern8(n);
     cout<<endl;
-
+// 9
     pattern1(n);
     pattern2(n);
     return 0;

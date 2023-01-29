@@ -1,7 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void pattern1(int n)
+
+void pattern10(int n)
+{
+    for(int i=1; i<=2*n-1; i++){
+        int star = i;
+        if(i>n)
+            star = 2*n-i;
+        for(int j=1; j<=star; j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
+void pattern11(int n)
 {
     int start = 1;
     for(int i=0; i<n; i++){
@@ -19,7 +32,7 @@ void pattern1(int n)
     }
 }
 
-void pattern2(int n)
+void pattern12(int n)
 {
     int space = 2*(n-1);
     for(int i=1; i<=n; i++){
@@ -40,9 +53,9 @@ void pattern2(int n)
     }
 }
 
-void pattern3(int n)
+void pattern13(int n)
 {
-    int num = 1; 
+    int num = 1;
     for(int i=1; i<=n; i++){
         for(int j=1; j<=i; j++){
             cout<<num<<" ";
@@ -55,10 +68,12 @@ int main()
 {
     int n=5;
     // cin>>n;
-    pattern1(n);
+    pattern10(n);
     cout<<endl;
-    pattern2(n);
+    pattern11(n);
     cout<<endl;
-    pattern3(n);
+    pattern12(n);
+    cout<<endl;
+    pattern13(n);
     return 0;
 }
