@@ -18,7 +18,7 @@ vector<vector<int>> threeSum(vector<int> &arr, int n)
         }
     }
 
-    //store the set elements in the answer:
+    //store the st elements in the ans
     vector<vector<int>> ans(st.begin(), st.end());
     return ans;
 }
