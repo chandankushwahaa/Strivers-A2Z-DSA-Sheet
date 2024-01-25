@@ -20,7 +20,7 @@ int SecondLargest(int arr[], int n)
 }
 
 // Better Approch
-// TC = O(2n)
+// TC = O(n)
 int SecondLargest2(int arr[], int n)
 {
     // O(n)
